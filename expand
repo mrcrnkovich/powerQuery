@@ -1,0 +1,4 @@
+// requires the Util: expandSequence
+
+(outer as list, inner as list) =>
+        List.Transform( outer, (x) => expandSequence(x, inner) )
