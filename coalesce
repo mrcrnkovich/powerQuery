@@ -1,0 +1,4 @@
+let 
+    Return = (value, default) => if (value=null) then default else value
+in
+    Return
