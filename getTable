@@ -1,0 +1,4 @@
+let
+    Source =(tableName)=> Excel.CurrentWorkbook(){[Name=tableName]}[Content]
+in
+    Source
