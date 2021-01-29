@@ -1,0 +1,10 @@
+let
+    query = (fixed, seq) => 
+            List.Generate(
+                () => [ i = 0, r = [a=fixed, b=seq{0}] ],
+                each [i] < List.Count(seq),
+                each [i = [i] + 1, r = [r] & [a=fixed, b=seq{i}] ],
+                each [r]
+            )
+in
+    query
